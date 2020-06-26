@@ -54,20 +54,11 @@ public class StepDefs {
             String campanaElementLink = driver.findElement(By.cssSelector(".preopen-info a")).getAttribute("href");
             System.out.println(campanaElementLink);
             String campañaArticulo = destacado.getAttribute("data-prv-campaignname");
-            String artEnCampanacampaña = campañaArticulo.replaceAll(" ","-");
+            String artEnCampana = campañaArticulo.replaceAll(" ","-");
+            System.out.println(artEnCampana);
             campanaElementLink.contains(campañaArticulo);
             System.out.println(campañaArticulo);
             WebElement vigencia = destacado.findElement(By.cssSelector(".item-dataInfo"));
-
-/*            if (vigencia.getText().isEmpty())
-            {
-                System.out.println(vigencia.getText());
-            }else
-                vigencia.getText();*/
- //           try{
- //               System.out.println(vigencia.getText());
- //           }catch(Exception e){
-//            }
         }
 
     }
